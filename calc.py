@@ -27,7 +27,7 @@ while(opc != 'x'):
     print_menu()
     opc = input('Please choose an option: ')
 
-    if(opc != 'x'):
+    if(opc != 'x','5'):
         num1 = input("First number: ")
         num2 = input("Second number: ")
 
@@ -48,6 +48,11 @@ while(opc != 'x'):
             print("Dont divide by zero U will kill us ALL")
         else:
             res = float(num1) / float(num2)
+            print("Result" + str(res))
+
+    elif(opc == '5'):
+            birth = input("What is your birth year I will tell your age")
+            res = float(2020) - int(birth)
             print("Result" + str(res))
 
 print('Good bye!')
